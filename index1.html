@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Baris</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="kalkulator">
+        <h2>Kalkulator Baris</h2>
+        <label for="tipe-sekuens">Pilih tipe sekuens:</label>
+        <select id="tipe-sekuens">
+            <option value="aritmatika">Baris Aritmatika</option>
+            <option value="geometri">Baris Geometri</option>
+        </select>
+        <div class="input">
+            <label for="suku-pertama">Suku Pertama (a<sub>1</sub>):</label>
+            <input type="number" id="suku-pertama">
+            <label for="beda-atau-rasio">Beda (d) / Rasio (r):</label>
+            <input type="number" id="beda-atau-rasio">
+            <label for="nomor-suku">Nomor Suku (n):</label>
+            <input type="number" id="nomor-suku">
+        </div>
+        <div class="tombol">
+            <button onclick="hitung()">Hitung</button>
+            <button onclick="hapus()">Hapus</button>
+        </div>
+        <div class="output">
+            <p id="hasil"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Deret Aritmatika & Geometri</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="title">Kalkulator Deret Aritmatika & Geometri</div>
+    <div class="container">
+        <div class="panel" id="arithmeticPanel">
+            <h2>Aritmatika</h2>
+            <label>Suku Pertama (a):</label>
+            <input type="number" id="aArithmetic">
+            <label>Beda (b):</label>
+            <input type="number" id="bArithmetic">
+            <label>Banyak Suku (n):</label>
+            <input type="number" id="nArithmetic">
+            <label>Un:</label>
+            <input type="number" id="unArithmetic" readonly>
+            <label>Sn:</label>
+            <input type="number" id="snArithmetic" readonly>
+            <label>Deret:</label>
+            <input type="text" id="seriesArithmetic" readonly>
+            <button onclick="calculateArithmetic()">Hitung Deret Aritmatika</button>
+        </div>
+        <div class="panel" id="geometricPanel">
+            <h2>Geometri</h2>
+            <label>Suku Pertama (a):</label>
+            <input type="number" id="aGeometric">
+            <label>Rasio (r):</label>
+            <input type="number" id="rGeometric">
+            <label>Banyak Suku (n):</label>
+            <input type="number" id="nGeometric">
+            <label>Un:</label>
+            <input type="number" id="unGeometric" readonly>
+            <label>Sn:</label>
+            <input type="number" id="snGeometric" readonly>
+            <label>Deret:</label>
+            <input type="text" id="seriesGeometric" readonly>
+            <button onclick="calculateGeometric()">Hitung Deret Geometri</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
